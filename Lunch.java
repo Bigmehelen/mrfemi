@@ -43,11 +43,12 @@ return total;
 }	
 
 public static void findMultiples(){
-int count;
+String result = "";
 for(count = 2000; count >=2000 && count<= 3200; count++){
-	count = count / 7;
-	System.out.println(+ count);
-
+	if (count % 7 == 0 && count % 5 != 0){
+	result = result + count;
+}
+	return result;
 }
 }
 
